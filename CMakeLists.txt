@@ -11,3 +11,5 @@ include_directories("include/" "libs/")
 add_executable(${PROJECT_NAME} ${SOURCE})
 
 target_link_libraries(${PROJECT_NAME} spdlog::spdlog_header_only)
+target_precompile_headers(${PROJECT_NAME} PUBLIC include/pch.h)
+set(CMAKE_PCH_INSTANTIATE_TEMPLATES ON)
