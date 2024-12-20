@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.28)
 project(CppTemplate)
 cmake_policy(SET CMP0072 NEW)
 
+#add_compile_definitions(RELEASE) <-- uncomment to remove logging at compile time
+
 FIND_PACKAGE(spdlog REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 
